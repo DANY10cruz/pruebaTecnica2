@@ -1,0 +1,88 @@
+<!-- Formulario Actualizar Empleado -->
+<div id="update-employee-section" class="form-section">
+  <div class="update-employee-form">
+    <div class="floating-icon" style="color: #4ecdc4">
+      <i class="bi bi-person-gear"></i>
+    </div>
+    <h2 class="form-title teal">Actualizar Empleado</h2>
+    <form id="update-employee-form">
+      <div class="mb-4">
+        <label for="update-emp-select" class="form-label">
+          <i class="bi bi-search"></i> Seleccionar Empleado
+        </label>
+        <select class="form-control" id="update-emp-select" required>
+          <option value="">Buscar empleado...</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <label for="update-emp-name" class="form-label">
+            <i class="bi bi-person"></i> Nombre Completo
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="update-emp-name"
+            required
+          />
+        </div>
+        <div class="col-md-6 mb-4">
+          <label for="update-emp-email" class="form-label">
+            <i class="bi bi-envelope"></i> Correo Electrónico
+          </label>
+          <input
+            type="email"
+            class="form-control"
+            id="update-emp-email"
+            required
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <label for="update-emp-phone" class="form-label">
+            <i class="bi bi-telephone"></i> Teléfono
+          </label>
+          <input type="tel" class="form-control" id="update-emp-phone" />
+        </div>
+        <div class="col-md-6 mb-4">
+          <label for="update-emp-position" class="form-label">
+            <i class="bi bi-briefcase"></i> Cargo / Posición
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="update-emp-position"
+            required
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <label for="update-emp-department" class="form-label">
+            <i class="bi bi-building"></i> Departamento
+          </label>
+          <select class="form-control" id="update-emp-department" required>
+            <option value="">Seleccionar departamento...</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-4">
+          <label for="update-emp-salary" class="form-label">
+            <i class="bi bi-currency-dollar"></i> Salario
+          </label>
+          <input
+            type="number"
+            class="form-control"
+            id="update-emp-salary"
+            step="0.01"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn-submit">
+          <i class="bi bi-check-circle"></i> Actualizar Empleado
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

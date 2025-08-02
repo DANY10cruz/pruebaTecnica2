@@ -1,0 +1,39 @@
+/* Formulario Agregar Departamento  */
+.add-department-form {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(252, 182, 159, 0.3);
+  margin: 30px 0;
+}
+
+.add-department-form .form-control {
+  border: none;
+  border-radius: 15px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.add-department-form .form-control:focus {
+  box-shadow: 0 8px 25px rgba(252, 182, 159, 0.4);
+  transform: translateY(-2px);
+  background: white;
+}
+
+.add-department-form .btn-submit {
+  background: linear-gradient(135deg, #ff9068 0%, #fd746c 100%);
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(255, 144, 104, 0.3);
+  transition: all 0.3s ease;
+}
+
+.add-department-form .btn-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(255, 144, 104, 0.4);
+}

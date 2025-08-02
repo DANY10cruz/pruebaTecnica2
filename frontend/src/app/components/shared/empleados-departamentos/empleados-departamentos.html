@@ -1,0 +1,67 @@
+<div class="main-container">
+  <!-- Header -->
+  <div class="header-section">
+    <div class="header-content">
+      <h1 class="header-title animate__animated animate__fadeInDown">
+        <i class="bi bi-building-gear"></i> Sistema de Gestión
+      </h1>
+      <p class="header-subtitle animate__animated animate__fadeInUp">
+        Departamentos y Empleados en Tiempo Real
+      </p>
+      <button
+        class="btn refresh-btn animate__animated animate__pulse animate__infinite"
+        onclick="loadData()"
+      >
+        <i class="bi bi-arrow-clockwise"></i> Actualizar Datos
+      </button>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content-section">
+    <!-- Statistics Bar -->
+    <div class="stats-bar fade-in">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="stat-item">
+            <div class="stat-number" id="totalDepartments">0</div>
+            <div class="stat-label">Departamentos</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stat-item">
+            <div class="stat-number" id="totalEmployees">0</div>
+            <div class="stat-label">Empleados</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stat-item">
+            <div class="stat-number" id="avgEmployeesPerDept">0</div>
+            <div class="stat-label">Promedio por Depto.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Error Message -->
+    <div id="errorMessage" class="error-message" style="display: none">
+      <h4>
+        <i class="bi bi-exclamation-triangle"></i> Error al cargar los datos
+      </h4>
+      <p id="errorText">No se pudieron obtener los datos del servidor.</p>
+      <button class="btn btn-light mt-3" onclick="loadData()">
+        <i class="bi bi-arrow-clockwise"></i> Reintentar
+      </button>
+    </div>
+
+    <!-- Departments Container -->
+    <div id="departmentsContainer">
+      <!-- Los departamentos se cargarán aquí dinámicamente -->
+    </div>
+  </div>
+</div>

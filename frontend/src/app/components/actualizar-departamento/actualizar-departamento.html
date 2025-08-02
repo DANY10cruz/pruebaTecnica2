@@ -1,0 +1,64 @@
+<!-- Formulario Actualizar Departamento -->
+<div id="update-department-section" class="form-section">
+  <div class="update-department-form">
+    <div class="floating-icon" style="color: #bc4e9c">
+      <i class="bi bi-building-gear"></i>
+    </div>
+    <h2 class="form-title purple">Actualizar Departamento</h2>
+    <form id="update-department-form">
+      <div class="mb-4">
+        <label for="update-dept-select" class="form-label">
+          <i class="bi bi-search"></i> Seleccionar Departamento
+        </label>
+        <select class="form-control" id="update-dept-select" required>
+          <option value="">Buscar departamento...</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <label for="update-dept-name" class="form-label">
+            <i class="bi bi-building"></i> Nombre del Departamento
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="update-dept-name"
+            required
+          />
+        </div>
+        <div class="col-md-6 mb-4">
+          <label for="update-dept-manager" class="form-label">
+            <i class="bi bi-person-badge"></i> Gerente / Encargado
+          </label>
+          <input type="text" class="form-control" id="update-dept-manager" />
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="update-dept-description" class="form-label">
+          <i class="bi bi-card-text"></i> Descripción
+        </label>
+        <textarea
+          class="form-control"
+          id="update-dept-description"
+          rows="4"
+        ></textarea>
+      </div>
+      <div class="mb-4">
+        <label for="update-dept-budget" class="form-label">
+          <i class="bi bi-currency-dollar"></i> Presupuesto Anual
+        </label>
+        <input
+          type="number"
+          class="form-control"
+          id="update-dept-budget"
+          step="0.01"
+        />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn-submit">
+          <i class="bi bi-check-circle"></i> Actualizar Departamento
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
